@@ -14,7 +14,7 @@ import ValidContrasena from "../views/ValidContrasena";
 import ContadorClics from "../views/ContadorClics";
 import ListaTareas from "../views/ListaTareas";
 import RandomNumber from "../components/RandomNumber";
-import SurveyView from "../views/survey";
+import SurveyView from "../views/Survey";
 import ShoppingCartView from "../views/ShoppingCart";
 import RegisterFormView from "../views/RegisterForm";
 

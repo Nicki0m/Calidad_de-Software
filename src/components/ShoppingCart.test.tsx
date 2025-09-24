@@ -11,8 +11,8 @@ describe("ShoppingCart", () => {
 
   test("al agregar un producto, aumenta el total", () => {
     render(<ShoppingCart />);
-    const addButton = screen.getByText("Agregar", { selector: "button" });
-    fireEvent.click(addButton);
+    const addButtons = screen.getAllByText("Agregar", { selector: "button" });
+    fireEvent.click(addButtons[0]);
 
     expect(screen.getByText(/Carrito:/)).toBeInTheDocument();
     expect(screen.getByText(/Total: \$/)).not.toHaveTextContent("0");
@@ -20,8 +20,8 @@ describe("ShoppingCart", () => {
 
   test("al eliminar un producto, el total se actualiza", () => {
     render(<ShoppingCart />);
-    const addButton = screen.getByText("Agregar", { selector: "button" });
-    fireEvent.click(addButton);
+    const addButtons = screen.getAllByText("Agregar", { selector: "button" });
+    fireEvent.click(addButtons [0]);
 
     const removeButton = screen.getByText("Eliminar");
     fireEvent.click(removeButton);

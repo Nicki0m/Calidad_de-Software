@@ -11,7 +11,7 @@ export default function RegisterForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setMessage(`Usuario ${name} registrado con éxito`);
+    setMessage(`Registro completado con éxito`);
     setName("");
     setEmail("");
   };
