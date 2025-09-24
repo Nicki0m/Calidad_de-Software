@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaCube, FaColumns, FaMicrophone, FaShapes, FaCalculator, FaRuler, FaKey, FaMouse, FaList } from "react-icons/fa";
+import { FaHome, FaCube, FaColumns, FaMicrophone, FaShapes, FaCalculator, FaRuler, FaKey, FaMouse, FaList, FaShoppingCart } from "react-icons/fa";
+import { BiBarChartSquare } from "react-icons/bi";
+import { IoIosLogOut } from "react-icons/io";
 
 interface SidebarItem {
   label: string;
@@ -14,6 +16,7 @@ const mainItems: SidebarItem[] = [
   { label: "Responsive Layouts", route: "/layouts", icon: <FaColumns /> },
   { label: "Text-to-Speech", route: "/tts", icon: <FaMicrophone /> },
   { label: "Figuras Geometricas", route: "/three_2", icon: <FaShapes /> },
+   //ponerlo abajo
 ];
 
 const exerciseItems: SidebarItem[] = [
@@ -22,6 +25,10 @@ const exerciseItems: SidebarItem[] = [
   { label: "Validadador de Contraseñas", route: "/validcontrasena", icon: <FaKey /> },
   { label: "Contador de Clics con Almacenamiento", route: "/contadorclics", icon: <FaMouse /> },
   { label: "Lista de Tareas", route: "/listareas", icon: <FaList /> },
+  { label: "Números Aleatorios", route: "/randomnumber", icon: <FaList /> },
+  { label: "Encuesta de Satisfacción", route: "/survey", icon: <BiBarChartSquare size={30} />},
+  { label: "Carrito de Compras", route: "/shoppingcart", icon: <FaShoppingCart />},
+  { label: "Formulario de Registro", route: "/registerform", icon: <IoIosLogOut size={30} />}
 ];
 
 export default function Sidebar() {
