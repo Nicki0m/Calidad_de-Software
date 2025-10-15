@@ -14,7 +14,7 @@ describe("RandomNumber", () => {
 
   test("el número está dentro del rango [1,100]", () => {
     render(<RandomNumber />);
-    const button = screen.getByRole("button", { name /Generar número/i });
+    const button = screen.getByRole("button", { name: /Generar número/i });
 
     fireEvent.click(button);
 
